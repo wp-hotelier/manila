@@ -72,6 +72,16 @@ class Manila_Setup_Theme {
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		/*
+		 * Set Post Thumbnail size.
+		 *
+		 * @link https://developer.wordpress.org/reference/functions/set_post_thumbnail_size/
+		 */
+		set_post_thumbnail_size( 770, 435, true );
+
+		// Additional image sizes
+		add_image_size( 'manila_home_slider_image_size', 1440, 768, true );
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary-menu' => esc_html__( 'Navigation', 'manila' ),
@@ -88,8 +98,6 @@ class Manila_Setup_Theme {
 			'gallery',
 			'caption',
 		) );
-
-		add_image_size( 'manila_home_slider_image_size', 1440, 768, true );
 
 		/**
 		 * Add support for core custom logo.
