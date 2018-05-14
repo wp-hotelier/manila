@@ -17,6 +17,7 @@
     "build:scss": "npm run run:sass && npm run run:sass -- -w",
     "build:css-default": "postcss --no-map -w .tmp/style.css -d .",
     "build:css-hotelier": "postcss --no-map -w .tmp/hotelier.css -d assets/css",
+    "build:css-gutenberg": "postcss --no-map -w .tmp/gutenberg.css -d assets/css",
     "sync": "onchange '**/*' -e 'dist' -e '.git' -e 'sass' -e 'languages' -e 'assets/js/*.min.js' -e '.tmp' -w -- npm run run:sync",
     "server": "browser-sync start --proxy $npm_config_P_URL --host $npm_config_P_URL --reload-delay 1000 --files '**/*.css'",
     "dirs": "mkdir -p .tmp; touch .tmp/style.css; touch .tmp/hotelier.css; mkdir -p languages; touch \"languages/${npm_config_P_SLUG}.pot\";",
@@ -55,5 +56,8 @@
       "array-callback-return": 0,
       "no-useless-escape": 0
     }
+  },
+  "dependencies": {
+    "npm": "^6.0.1"
   }
 }
