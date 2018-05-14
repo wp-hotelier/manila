@@ -8,7 +8,7 @@
  */
 
 $manila_show_language_switcher = manila_get_option( 'navigation-show-language-switcher', false );
-$manila_show_book_button       = manila_get_option( 'navigation-show-book-button', true );
+$manila_show_book_button       = manila_get_option( 'navigation-show-book-button', false );
 ?>
 
 <?php

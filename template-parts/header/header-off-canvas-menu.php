@@ -66,12 +66,12 @@
 
 			<div class="site-header-buttons">
 				<?php
-				if ( manila_get_option( 'navigation-show-language-switcher', true ) ) :
+				if ( manila_get_option( 'navigation-show-language-switcher', false ) ) :
 					manila_header_language_switcher();
 				endif; ?>
 
 				<?php
-				if ( manila_get_option( 'navigation-show-book-button', true ) ) :
+				if ( manila_get_option( 'navigation-show-book-button', false ) ) :
 					manila_header_book_button();
 				endif;
 				?>
