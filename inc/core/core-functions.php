@@ -76,3 +76,16 @@ if ( ! function_exists( 'manila_google_fonts_url' ) ) :
 		return esc_url_raw( $fonts_url );
 	}
 endif;
+
+if ( ! function_exists( 'manila_is_gutenberg_active' ) ) :
+/**
+ * Check if Gutenberg is active
+ */
+function manila_is_gutenberg_active() {
+	if ( function_exists( 'the_gutenberg_project' ) ) {
+		return true;
+	}
+
+	return false;
+}
+endif;
