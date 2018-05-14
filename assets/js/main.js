@@ -315,11 +315,11 @@ jQuery(function ($) {
 
 				// Hoverintent
 				hoverintent(subMenus[i].parentNode,
-				function () {
-					this.className += ' hover';
-				}, function () {
-					this.className = this.className.replace(' hover', '');
-				});
+					function () {
+						this.className += ' hover';
+					}, function () {
+						this.className = this.className.replace(' hover', '');
+					});
 			}
 
 			// The listener attached to each submenu button (expand/collapse the submenu).
