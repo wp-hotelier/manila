@@ -1,0 +1,265 @@
+/*--------------------------------------------------------------
+>>> WIDGETS
+----------------------------------------------------------------
+*/
+
+/* Search */
+
+.widget-room-search {
+	input[type="search"] {
+		margin-bottom: 0;
+	}
+
+	.button {
+		display: none;
+	}
+}
+
+/* Rooms */
+
+.widget-rooms__list {
+	@include clear-list();
+	margin-bottom: 0;
+}
+
+.widget-rooms__item {
+	margin-bottom: $space;
+	min-height: 80px;
+}
+
+.widget-rooms__name {
+	@include font-size(15px, 1.5);
+	font-weight: 700;
+	display: block;
+	margin-bottom: 0;
+}
+
+.widget-rooms__name,
+.widget-rooms__price {
+	margin-left: 100px;
+}
+
+.widget-rooms__thumbnail {
+	position: absolute;
+	width: 80px;
+}
+
+.widget-rooms__price {
+	@include font-size(13px, 1.5);
+}
+
+/* Booking widget */
+
+.widget-booking {
+	.widget-booking__change-cart-link {
+		@include font-size(10px);
+		background: $color__background-button;
+		color: #fff;
+		display: inline-block;
+		font-family: $font__secondary;
+		letter-spacing: 2px;
+		padding: 5px 25px;
+		text-transform: uppercase;
+
+		&:hover {
+			background: $color__background-button-hover;
+			color: #fff;
+		}
+	}
+
+	p {
+		margin-bottom: $space__xs;
+
+		@include mq($from: desktop) {
+			text-align: right;
+		}
+	}
+
+	.widget-booking__dates {
+		background-color: #fafafa;
+		display: inline-block;
+		font-family: $font__secondary;
+		letter-spacing: 1.5px;
+		margin-bottom: $space;
+		padding: $space $space;
+		text-transform: uppercase;
+
+		@include mq($from: desktop) {
+			display: block;
+		}
+	}
+
+	.widget-booking__date-label {
+		@include font-size(10px);
+		color: $color__text-light;
+		font-weight: 700;
+		margin-bottom: $space;
+	}
+
+	.widget-booking__date-block {
+		background-color: #fff;
+		padding: .5em 1.5em;
+
+		@include mq($from: desktop) {
+			padding: .5em 1em;
+		}
+	}
+
+	.widget-booking__month-year,
+	.widget-booking__day-name {
+		@include font-size(13px);
+		display: block;
+	}
+
+	.widget-booking__day-name {
+		color: $color__text-light;
+	}
+
+	.widget-booking__day {
+		@include font-size(25px);
+		font-family: $font__main;
+	}
+
+	.widget-booking__date-block--checkin,
+	.widget-booking__date-block--checkout {
+		display: inline-block;
+		text-align: center;
+	}
+
+	@include mq($from: desktop) {
+		.widget-booking__dates {
+			overflow: hidden;
+		}
+
+		.widget-booking__date-block--checkin {
+			float: left;
+		}
+
+		.widget-booking__date-block--checkout {
+			float: right;
+		}
+	}
+
+	.widget-booking__room-item {
+		border-bottom: 1px solid $color__background-line;
+		padding: $space__xs 0;
+	}
+
+	.widget-booking__room-link {
+		font-weight: 700;
+	}
+
+	.widget-booking__room-rate {
+		@include font-size(10px);
+		color: $color__text-light;
+		display: block;
+		font-family: $font__secondary;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+	}
+
+	.widget-booking__cart-total {
+		display: block;
+		margin-top: $space;
+		overflow: hidden;
+	}
+
+	.amount {
+		@include font-size(20px);
+		color: $color__text-dark;
+		float: right;
+		font-style: normal;
+	}
+}
+
+/* Rooms filter */
+
+.site-sidebar {
+	.widget-rooms-filter {
+		display: none;
+
+		@include mq($from: desktop) {
+			display: block;
+		}
+	}
+}
+
+.page__content .widget-rooms-filter {
+	@include mq($from: desktop) {
+		display: none;
+	}
+}
+
+.widget-rooms-filter__group {
+	margin-bottom: $space;
+}
+
+.widget-rooms-filter__group-label {
+	@include font-size(14px);
+	background-color: $color__text-dark;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	margin-bottom: $space__s;
+	padding: $space__xs 35px;
+	position: relative;
+
+	&:before {
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 5px solid #fff;
+		content: '';
+		height: 0;
+		left: $space__s;
+		margin-right: 1em;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 0;
+	}
+
+	&.open:before {
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #fff;
+		border-bottom: none;
+	}
+}
+
+.widget-rooms-filter__group-link {
+	@include font-size(14px);
+	display: inline-block;
+	padding: $space__xs 0 0;
+	position: relative;
+	text-decoration: none !important;
+
+	&:after {
+		@include transition;
+		background-color: transparent;
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 2px;
+		left: 9px;
+		position: absolute;
+		right: 0;
+	}
+
+	&:before {
+		content:"\00b7";
+		margin-right: 5px;
+	}
+}
+
+.widget-rooms-filter__group-link:hover {
+	color: $color__text-dark !important;
+}
+
+.widget-rooms-filter__group-link:hover:after,
+.widget-rooms-filter__group-item--chosen .widget-rooms-filter__group-link:after {
+	background-color: $color__text-dark;
+}
+
+.widget-rooms-filter__group-item--chosen .widget-rooms-filter__group-link {
+	color: $color__text-dark;
+}

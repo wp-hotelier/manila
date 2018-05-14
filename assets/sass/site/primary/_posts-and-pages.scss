@@ -1,0 +1,169 @@
+.sticky {
+	display: block;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.entry-title {
+	margin-bottom: $space__s;
+
+	a:hover {
+		color: $color__text-light;
+	}
+}
+
+.post__item,
+.page__item {
+	margin: 0 0 $space__xl;
+}
+
+.single .post__item {
+	margin-bottom: $space__ll;
+}
+
+.post__header {
+	margin-bottom: $space__m;
+}
+
+.post__meta {
+	@include font-size(14px);
+	font-style: italic;
+
+	a {
+		color: $color__text-dark;
+		font-style: normal;
+		font-weight: 700;
+		text-decoration: underline;
+
+		&:hover {
+			color: $color__text-light;
+		}
+	}
+}
+
+.post__content,
+.page__content {
+	a:not(.button) {
+		color: $color__text-dark;
+		text-decoration: underline;
+
+		&:hover {
+			color: $color__text-light;
+		}
+	}
+
+	> p {
+		margin-bottom: $space__m;
+	}
+}
+
+.post__footer {
+	@include font-size(14px);
+	border-top: 1px solid $color__background-line;
+	font-style: italic;
+	margin-top: $space;
+	padding-top: $space__s;
+
+	.cat-links,
+	.tags-links,
+	.comments-link {
+		margin-right: $space__s;
+
+		a {
+			color: $color__text-dark;
+			font-style: normal;
+			font-weight: 700;
+			text-decoration: underline;
+
+			&:hover {
+				color: $color__text-light;
+			}
+		}
+	}
+}
+
+.post__thumbnail {
+	display: block;
+	margin-bottom: $space__l;
+	text-align: center;
+}
+
+.page__header {
+	margin-bottom: $space__ll;
+
+	.entry-title {
+		margin-bottom: 0;
+	}
+}
+
+.page__description {
+	@include font-size(16px);
+	font-style: italic;
+	margin-bottom: $space__l;
+}
+
+.page__content--error-404,
+.page__not-found {
+	.search-form label {
+		display: inline;
+	}
+
+	p {
+		font-style: italic;
+	}
+}
+
+.error404 {
+	#main {
+		margin: 0 auto;
+		max-width: 770px;
+	}
+}
+
+.page__header--404 {
+	text-align: center;
+}
+
+.site-main--no-sidebar .page__not-found,
+.page__content--error-404 {
+	text-align: center;
+}
+
+.post-password-form {
+	label {
+		display: inline;
+	}
+
+	input[type="password"] {
+		margin-left: $space__s;
+	}
+}
+
+.post-edit-link {
+	@include font-size(11px);
+	background: $color__background-button;
+	color: $color__text-button;
+	display: inline-block;
+	font-family: $font__secondary;
+	font-style: normal;
+	letter-spacing: 1px;
+	padding: 3px 13px;
+	text-transform: uppercase;
+
+	&:hover {
+		background: $color__background-button-hover;
+		color: $color__text-button;
+	}
+}
+
+.more-link {
+	@include font-size(11px);
+	display: block;
+	font-family: $font__secondary;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}

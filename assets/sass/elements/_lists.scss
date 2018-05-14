@@ -1,0 +1,26 @@
+dl, ul, ol {
+	margin-bottom: $space;
+}
+
+dd, ul, ol {
+	margin-left: $space;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: $space;
+}
+
+dt {
+	color: $color__text-dark;
+	font-weight: 700;
+}

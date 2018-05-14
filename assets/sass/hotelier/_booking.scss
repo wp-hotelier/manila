@@ -1,0 +1,272 @@
+/*--------------------------------------------------------------
+>>> BOOKING
+----------------------------------------------------------------
+*/
+
+.booking__section,
+.reservation-received__section {
+	margin-bottom: $space__l;
+}
+
+.section-header__title {
+	@include font-size(12px);
+	color: $color__text-light;
+	font-family: $font__secondary;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.guest-details-fields {
+	overflow: hidden;
+}
+
+#state_field,
+#postcode_field {
+	@include mq($from: tablet) {
+		margin-bottom: 0;
+	}
+}
+
+#arrival_time_field {
+	label {
+		@include font-size(16px);
+		color: $color__text-main;
+		display: inline;
+		font-family: $font__main;
+		font-weight: 700;
+		letter-spacing: 0;
+		text-transform: none;
+	}
+
+	.form-row__description {
+		@include font-size(13px);
+		display: block;
+		font-style: italic;
+	}
+}
+
+#arrival_time {
+	@include font-size(16px);
+	margin-left: $space__s;
+}
+
+#special_requests_field .form-row__description {
+	@include font-size(15px);
+	display: block;
+	font-style: italic;
+	margin-top: $space__s;
+}
+
+.table--guest-details,
+.reservation-table--reservation-details {
+	td {
+		font-style: italic;
+	}
+}
+
+.credit-cards__list {
+	@include clear-list();
+	margin: 0;
+	padding: 0;
+}
+
+.credit-cards__icon {
+	display: inline-block;
+	height: 48px;
+	margin: 2px 0;
+	position: relative;
+	text-indent: -99999px;
+	width: 76px;
+
+	&:before {
+		background-color: #fff;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		border: 1px solid $color__background-line;
+		content: '';
+		display: inline-block;
+		height: 48px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 76px;
+	}
+}
+
+.credit-cards__icon--mastercard:before {
+	background-image: url(../../../../plugins/wp-hotelier/assets/images/cards/mastercard.svg);
+}
+
+.credit-cards__icon--amex:before {
+	background-image: url(../../../../plugins/wp-hotelier/assets/images/cards/amex.svg);
+}
+
+.credit-cards__icon--cirrus:before {
+	background-image: url(../../../../plugins/wp-hotelier/assets/images/cards/cirrus.svg);
+}
+
+.credit-cards__icon--discover:before {
+	background-image: url(../../../../plugins/wp-hotelier/assets/images/cards/discover.svg);
+}
+
+.credit-cards__icon--maestro:before {
+	background-image: url(../../../../plugins/wp-hotelier/assets/images/cards/maestro.svg);
+}
+
+.credit-cards__icon--visa:before {
+	background-image: url(../../../../plugins/wp-hotelier/assets/images/cards/visa.svg);
+}
+
+.credit-cards__icon--visa_e:before {
+	background-image: url(../../../../plugins/wp-hotelier/assets/images/cards/visa_e.svg);
+}
+
+.view-price-breakdown {
+	@include font-size(10px);
+	display: block;
+	font-weight: 600;
+	font-family: $font__secondary;
+	letter-spacing: 1.5px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.price-breakdown-wrapper {
+	border: 0;
+	padding: 0;
+}
+
+.table--price-breakdown {
+	@include font-size(14px);
+	border-bottom: 1px solid $color__background-line;
+	border-collapse: separate;
+	border-left: none;
+	border-right: 1px solid $color__background-line;
+	border-top: none;
+	margin: 0;
+	padding: 1em;
+
+	th,
+	td {
+		border: 0;
+	}
+
+	tr:nth-child(even) td {
+		background-color: #fafafa;
+	}
+
+	.amount {
+		font-weight: 700;
+	}
+}
+
+.price-breakdown__day--heading,
+.price-breakdown__cost--heading {
+	@include font-size(10px);
+	letter-spacing: 1.5px;
+	background-color: $color__text-dark;
+	font-family: $font__secondary;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.price-breakdown__day--heading {
+	border-right: 1px solid #fff !important;
+}
+
+.price-breakdown__day--body {
+	border-right: 1px solid #fff !important;
+	font-style: italic;
+}
+
+.reservation-non-cancellable-disclaimer__text {
+	@include font-size(16px);
+	font-style: italic;
+}
+
+.payment-methods {
+	@include clear-list();
+	margin: 0;
+	padding: 0;
+}
+
+.payment-method {
+	background-color: #fafafa;
+	padding: $space;
+	overflow: hidden;
+	margin-bottom: $space__xs;
+	position: relative;
+
+	img {
+		position: absolute;
+		top: 50%;
+		right: $space;
+		transform: translateY(-50%);
+	}
+}
+
+.payment-method__label {
+	cursor: pointer;
+	display: inline;
+	margin-bottom: 0;
+	margin-left: $space__xs;
+}
+
+.payment-method--single {
+	.payment-method__label {
+		margin-left: 0;
+	}
+
+	input[type="radio"] {
+		display: none;
+	}
+}
+
+.payment-method__description {
+	@include font-size(15px);
+	font-style: italic;
+}
+
+.button.button--book-button {
+	padding: 25px 60px;
+}
+
+.reservation-response {
+	@include font-size(18px);
+	font-style: italic;
+}
+
+.reservation-details__list {
+	@include clear-list();
+	background-color: #fafafa;
+	margin: 0;
+	padding: $space;
+}
+
+.reservation-details__label {
+	font-style: italic;
+}
+
+.reservation-details__item--special-requests {
+	margin-top: $space;
+	@include font-size(15px);
+}
+
+.reservation-details__label--special-requests {
+	display: block;
+	font-style: normal;
+}
+
+.bank-details__list {
+	@include clear-list();
+	margin: 0;
+	padding: 0;
+}
+
+.form--pay-reservation {
+	.booking__section--payment,
+	.button--book-button {
+		margin-top: $space__l;
+	}
+}

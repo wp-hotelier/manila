@@ -1,0 +1,174 @@
+.comments-area,
+.comment-respond {
+	margin-top: $space__ll;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+	input {
+		width: 100%;
+	}
+
+	@include mq($from: tablet) {
+		float: left;
+		width: (100 / 3) * 1%;
+	}
+}
+
+@include mq($from: tablet) {
+	.comment-form-author {
+		padding-right: 10px;
+	}
+
+	.comment-form-url {
+		padding-left: 10px;
+	}
+}
+
+.comments-title, {
+	@include font-size(26px, 1.5);
+	margin-bottom: $space__ll;
+}
+
+.comment-reply-title {
+	@include font-size(26px, 1.5);
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.comment-notes,
+.must-log-in,
+.no-comments {
+	@include font-size(14px);
+	font-style: italic;
+}
+
+.comment-awaiting-moderation {
+	@include font-size(14px);
+	font-style: italic;
+	font-weight: 700;
+	color: $color__text-dark;
+}
+
+.comment-list {
+	list-style: none;
+	margin-left: 0;
+	padding: 0;
+
+	ul,
+	ol {
+		list-style: none;
+		margin-left: 3em;
+		padding: 0;
+	}
+}
+
+.comment-body {
+	margin-bottom: $space;
+	padding-bottom: $space;
+	position: relative;
+
+	&:after {
+		bottom: 0;
+		content: '';
+		height: 1px;
+		position: absolute;
+		left: 50px;
+		right: 0;
+		background-color: $color__background-line;
+	}
+}
+
+.comment-author,
+.comment-metadata,
+.comment-content,
+.reply,
+.comment-awaiting-moderation {
+	padding-left: 50px;
+}
+
+.comment-author {
+	@include font-size(15px);
+	color: $color__text-dark;
+	font-weight: 700;
+
+	a {
+		color: $color__text-dark;
+
+		&:hover {
+			color: $color__text-light;
+		}
+	}
+
+	.says {
+		display: none;
+	}
+
+	img {
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+}
+
+.comment-metadata {
+	@include font-size(14px);
+	color: $color__text-light;
+	margin-bottom: .5em;
+}
+
+.comment-edit-link {
+	color: $color__text-dark;
+	font-weight: 700;
+	margin-left: $space__xxs;
+}
+
+.comment-reply-link {
+	@include font-size(11px);
+	background: $color__background-button;
+	color: $color__text-button;
+	display: inline-block;
+	font-family: $font__secondary;
+	letter-spacing: 1px;
+	padding: 3px 13px;
+	text-transform: uppercase;
+
+	&:hover {
+		background: $color__background-button-hover;
+		color: $color__text-button;
+	}
+}
+
+.logged-in-as {
+	font-style: italic;
+	@include font-size(14px);
+
+	a {
+		color: $color__text-dark;
+
+		&:hover {
+			color: $color__text-light;
+		}
+	}
+}
+
+#cancel-comment-reply-link {
+	color: $color__text-light;
+
+	&:hover {
+		color: $color__text-dark;
+	}
+}
+
+.comment-navigation {
+	.nav-links {
+		margin-top: $space__ll;
+	}
+}

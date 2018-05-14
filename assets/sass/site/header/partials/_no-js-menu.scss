@@ -1,0 +1,30 @@
+.site-navigation__list {
+	color: $color__text-dark;
+
+	> .current_page_parent,
+	> .current_page_item,
+	> .current-menu-item,
+	> .current_page_ancestor,
+	> .current-menu-ancestor {
+		> .site-navigation__link--first-level {
+			border-bottom: 1px solid $color__text-dark;
+		}
+	}
+}
+
+.site-navigation__link--first-level {
+	border-bottom: 1px solid transparent;
+
+	&:hover {
+		border-color: $color__text-dark;
+	}
+}
+
+.site-navigation__link--child {
+	@include font-size(15px);
+	color: #ababab;
+
+	&:hover {
+		color: $color__text-dark;
+	}
+}

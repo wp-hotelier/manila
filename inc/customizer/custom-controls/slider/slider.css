@@ -1,0 +1,20 @@
+.manila-slider-attachments {
+	background: #fff;
+	float: left;
+	clear: both;
+	margin-bottom: 1em;
+}
+
+.manila-slider-thumbnail-wrapper {
+	float: left;
+	width: 48%;
+	height: 100px;
+	padding: 1%;
+	overflow: hidden;
+}
+
+.manila-slider-thumbnail-wrapper img {
+	height: auto;
+	width: 100%;
+	float: left;
+}

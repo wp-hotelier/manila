@@ -1,0 +1,184 @@
+.htl-mobile .site-header--default-menu,
+.htl-mobile .site-header--top-menu,
+.js .site-header--off-canvas-menu {
+	#primary-menu-container {
+		background-color: #fff;
+		bottom: 0;
+		left: 0;
+		overflow-y: auto;
+		position: fixed;
+		right: 0;
+		text-align: left;
+		top: 0;
+		transform-style: preserve-3d;
+		transform: translateX(-100%);
+		transition-duration: .2s;
+		transition-property: transform;
+		transition-timing-function: cubic-bezier(.4,0,.2,1);
+		width: 100%;
+		will-change: transform;
+		z-index: 998;
+
+		@include mq($from: mobile) {
+			transform: translateX(-320px);
+			width: 320px;
+		}
+
+		@include mq($from: tablet) {
+			transform: translateX(-480px);
+			width: 480px;
+		}
+	}
+
+	.site-navigation__list {
+		@include font-size(20px);
+		border-top: 1px solid $color__background-line;
+		margin: $space__xxl $space__l 0;
+		padding: $space__m 0 $space__xl;
+		text-align: center;
+
+		@include mq($from: tablet) {
+			@include font-size(22px);
+		}
+	}
+
+	.site-navigation__link {
+		display: block;
+		padding: $space__xs $space;
+
+		&:hover {
+			color: $color__text-dark;
+		}
+	}
+
+	.site-navigation__link--child {
+		@include font-size(18px);
+		color: #ababab;
+	}
+
+	.sub-menu {
+		display: none;
+	}
+
+	.site-navigation__item--has-children {
+		position: relative;
+
+		.expand-submenu {
+			background-color: transparent;
+			background-image: url(assets/images/expand.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+			display: block;
+			height: 20px;
+			opacity: .3;
+			position: absolute;
+			right: 0;
+			top: 21px;
+			transform: translateY(-50%);
+			width: 20px;
+		}
+
+		&.open {
+			& > .sub-menu {
+				display: block;
+			}
+
+			& > .expand-submenu {
+				background-image: url(assets/images/collapse.svg);
+			}
+		}
+	}
+
+	.sub-menu .expand-submenu {
+		background-size: 80%;
+	}
+}
+
+.mobile-nav-open #primary-menu-container {
+	transform: translateX(0) !important;
+}
+
+#mobile-nav-obfuscator {
+	background-color: #111;
+	bottom: 0;
+	content: '';
+	display: block;
+	left: 0;
+	opacity: .5;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 997;
+}
+
+#close-mobile-menu {
+	background-color: transparent;
+	background-image: url(assets/images/close_menu.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	cursor: pointer;
+	height: 28px;
+	padding: 0;
+	position: absolute;
+	right: $space;
+	top: $space;
+	width: 29px;
+	z-index: 999;
+
+	@include mq($from: tablet) {
+		background-size: 100%;
+	}
+}
+
+.admin-bar #close-mobile-menu {
+	top: $space + 32px;
+
+	@media (max-width: 782px) {
+		top: $space + 46px;
+	}
+}
+
+#site-logo-clone {
+	bottom: $space;
+	display: none;
+	left: 50%;
+	opacity: .3;
+	position: relative;
+	transform: translateX(-50%);
+}
+
+.mobile-nav-open #site-logo-clone {
+	display: inline;
+}
+
+/*----------------------------
+This is a workaround used to
+hide the menu during the resize
+of the page and stop (hide) the
+animation on the container
+----------------------------*/
+
+.js .site-header--default-menu,
+.js .site-header--top-menu {
+	#primary-menu-container {
+		display: none;
+	}
+}
+
+.htl-mobile .site-header--default-menu,
+.htl-mobile .site-header--top-menu{
+	#primary-menu-container {
+		display: block;
+	}
+}
+
+@include mq($from: desktop) {
+	/* Restore the visibility of the menu */
+	.htl-desktop .site-header--default-menu,
+	.htl-desktop .site-header--top-menu {
+		#primary-menu-container {
+			display: block;
+		}
+	}
+}

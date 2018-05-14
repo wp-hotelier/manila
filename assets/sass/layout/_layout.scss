@@ -1,0 +1,87 @@
+.wrapper {
+	margin-left:  auto;
+	margin-right: auto;
+	padding-left: $space;
+	padding-right: $space;
+
+	@include mq($from: mobile_wide) {
+		padding-left: 0;
+		padding-right: 0;
+		width: $max__site__width__mobile;
+	}
+
+	@include mq($from: tablet) {
+		max-width: $max__content__width;
+	}
+
+	@include mq($from: desktop) {
+		max-width: $max__site__width;
+	}
+}
+
+.site-main {
+	padding-bottom: $space__xl;
+}
+
+.site-sidebar {
+	border-top: 1px solid $color__background-line;
+	padding-bottom: $space__xl;
+	padding-top: $space__xl;
+
+	@include mq($from: desktop) {
+		border-top: none;
+		padding-top: 0;
+	}
+}
+
+@include mq($from: desktop) {
+	.site-main--right-sidebar,
+	.site-main--left-sidebar {
+		width: $size__site__content;
+	}
+
+	.wrapper .site-main--no-sidebar {
+		@include center-block;
+		max-width: $max__content__width;
+	}
+
+	.site-main--right-sidebar {
+		float: left;
+		padding-right: $space__xl;
+	}
+
+	.site-main--left-sidebar {
+		float: right;
+		padding-left: $space__xl;
+	}
+
+	.site-sidebar--right-sidebar,
+	.site-sidebar--left-sidebar {
+		overflow: hidden;
+		width: $size__site__sidebar;
+	}
+
+	.site-sidebar--right-sidebar {
+		float: right;
+	}
+
+	.site-sidebar--left-sidebar {
+		float: left;
+	}
+}
+
+@include mq($from: wide) {
+	.wrapper {
+		.site-main--right-sidebar,
+		.site-main--left-sidebar {
+			padding-left: 0;
+			padding-right: 0;
+			width: $max__content__width;
+		}
+
+		.site-sidebar--right-sidebar,
+		.site-sidebar--left-sidebar {
+			width: ($max__site__width - $max__content__width - $space__xl);
+		}
+	}
+}

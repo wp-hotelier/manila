@@ -1,0 +1,113 @@
+/* Post paginated */
+
+.page-links {
+	clear: both;
+	margin: 0 0 $space;
+}
+
+.page-links__item {
+	@include font-size(11px);
+	@include transition;
+	background: $color__background-button;
+	color: $color__text-button;
+	display: inline-block;
+	font-family: $font__secondary;
+	letter-spacing: 1px;
+	margin: 0 1px;
+	padding: 3px 13px;
+	text-transform: uppercase;
+}
+
+a .page-links__item {
+	background: $color__background-button-hover;
+	color: $color__text-button;
+}
+
+a:hover .page-links__item {
+	background: $color__background-button;
+	color: $color__text-button;
+}
+
+.page-links__label {
+	font-weight: 700;
+}
+
+/* Next/prev post links */
+
+.nav-links {
+	@include font-size(14px, 1.5);
+	border-bottom: 1px solid $color__background-line;;
+	border-top: 1px solid $color__background-line;;
+	clear: both;
+	font-style: italic;
+	margin: 0 0 $space__ll;
+	overflow: hidden;
+	padding-bottom: $space;
+	padding-top: $space;
+
+	a {
+		color: $color__text-dark;
+
+		&:hover {
+			color: $color__text-light;
+		}
+	}
+}
+
+.nav-previous + .nav-next {
+	margin-top: $space__xxs;
+
+	@include mq($from: tablet) {
+		margin-top: 0;
+	}
+}
+
+@include mq($from: tablet) {
+	.nav-previous {
+		float: left;
+		padding-right: $space;
+		width: 49%;
+	}
+
+	.nav-next {
+		float: right;
+		margin-top: 0;
+		padding-left: $space;
+		text-align: right;
+		width: 49%;
+	}
+}
+
+/* Archive pagination */
+
+.pagination__list {
+	@include clear-list();
+	padding-left: 0;
+}
+
+.pagination__item {
+	display: inline-block;
+}
+
+.pagination__link {
+	@include font-size(11px);
+	@include transition;
+	background: $color__background-button-hover;
+	color: $color__text-button;
+	display: inline-block;
+	font-family: $font__secondary;
+	letter-spacing: 1px;
+	margin: 0 1px;
+	padding: 3px 13px;
+	text-transform: uppercase;
+
+	&:hover {
+		background: $color__background-button;
+		color: $color__text-button;
+	}
+}
+
+.pagination__link--current {
+	background: $color__background-button;
+	color: $color__text-button;
+}

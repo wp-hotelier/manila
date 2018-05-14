@@ -1,0 +1,221 @@
+.widget {
+	@include font-size(15px);
+	margin: 0 0 $space__l;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+
+	ul {
+		@include clear-list();
+		margin: 0;
+		padding: 0;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="color"],
+	textarea,
+	select {
+		width: 100%;
+	}
+
+	a {
+		color: $color__text-dark;
+
+		&:hover {
+			color: $color__text-light;
+		}
+	}
+}
+
+.site-sidebar .widget:last-child {
+	margin-bottom: 0;
+}
+
+.widget__title {
+	@include font-size(12px);
+	color: $color__text-light;
+	font-family: $font__secondary;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+/* Text */
+
+.widget_text {
+	a {
+		text-decoration: underline;
+	}
+
+	> p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* Search */
+
+.widget_search {
+	input[type="search"] {
+		margin-bottom: 0;
+	}
+
+	.search-submit {
+		display: none;
+	}
+}
+
+/* Posts */
+
+.widget_recent_entries {
+	ul {
+		a {
+			display: block;
+			padding: 2px 0;
+		}
+
+		.post-date {
+			@include font-size(13px);
+			color: $color__text-light;
+			display: block;
+			margin-bottom: $space__xs;
+			margin-top: -4px;
+		}
+	}
+}
+
+/* Categories, Archives, Pages, Meta and Menus */
+
+.widget_categories,
+.widget_archive,
+.widget_pages,
+.widget_meta,
+.widget_nav_menu {
+	li {
+		color: $color__text-light;
+	}
+
+	a {
+		color: $color__text-dark;
+		display: inline-block;
+		padding: 2px 0;
+
+		&:hover {
+			color: $color__text-light;
+		}
+	}
+
+	ul ul {
+		margin-left: 1.5em;
+	}
+}
+
+/* Comments */
+
+.widget_recent_comments {
+	li {
+		color: $color__text-light;
+		margin-bottom: .2em;
+		padding: 2px 0;
+	}
+
+	.comment-author-link {
+		color: $color__text-dark;
+		font-weight: 700;
+	}
+}
+
+/* RSS */
+
+.widget_rss {
+	.widget__title img {
+		display: none;
+	}
+
+	ul {
+		li {
+			margin-bottom: $space;
+		}
+
+		.rsswidget {
+			font-weight: 700;
+			display: block;
+		}
+	}
+
+	.rss-date {
+		@include font-size(13px);
+		color: $color__text-light;
+		display: block;
+	}
+
+	.rssSummary {
+		margin-top: $space__s;
+	}
+
+	cite {
+		@include font-size(13px);
+		font-weight: 700;
+	}
+}
+
+/* Calendar */
+
+.widget_calendar {
+	table {
+		@include font-size(13px);
+		text-align: center;
+	}
+
+	caption {
+		@include font-size(11px);
+		border: 1px solid $color__background-line;
+		border-bottom: none;
+		color: $color__text-light;
+		font-family: $font__secondary;
+		letter-spacing: 2px;
+		padding: 5px 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	thead,
+	tbody,
+	tfoot {
+		th, td {
+			text-align: center;
+		}
+	}
+
+	tbody a {
+		color: $color__text-dark;
+		font-weight: 700;
+	}
+
+	tfoot a {
+		@include font-size(10px);
+		color: $color__text-light;
+		font-family: $font__secondary;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+
+	thead {
+		@include font-size(11px);
+		font-family: $font__secondary;
+	}
+}
