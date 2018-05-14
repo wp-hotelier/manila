@@ -453,7 +453,9 @@ dfn, cite, em, i {
 }
 
 blockquote {
-  margin-bottom: 28px;
+  border-left: 2px solid #0F0F0F;
+  margin: 0 0 28px;
+  padding-left: 28px;
 }
 
 blockquote, q {
