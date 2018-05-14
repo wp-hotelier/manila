@@ -50,7 +50,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	MANILA_THEME_SETTINGS . '[navigation-show-book-button]',
 	array(
-		'default'           => true,
+		'default'           => false,
 		'sanitize_callback' => array( 'Manila_Customizer_Sanitizes', 'sanitize_checkbox' ),
 	)
 );
