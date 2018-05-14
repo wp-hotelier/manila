@@ -34,11 +34,11 @@
     "css-mqpacker": "^6.0.2",
     "node-sass": "^4.8.3",
     "npm-run-all": "^4.1.2",
-    "onchange": "^3.3.0",
+    "onchange": "^4.0.0",
     "postcss-cli": "^5.0.0",
     "sass-mq": "^4.0.2",
     "wp-pot-cli": "^1.1.0",
-    "xo": "^0.20.3"
+    "xo": "^0.21.0"
   },
   "xo": {
     "esnext": false,
