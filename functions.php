@@ -52,6 +52,6 @@ require MANILA_THEME_DIR . 'inc/customizer/class-manila-customizer.php';
 require MANILA_THEME_DIR . 'inc/customizer/class-manila-customizer-styles.php';
 
 /**
- * Easy WP Hotelier functions.
+ * Third-party related functions.
  */
-require MANILA_THEME_DIR . 'inc/core/hotelier-functions.php';
+require MANILA_THEME_DIR . 'inc/compatibility/compatibility.php';
