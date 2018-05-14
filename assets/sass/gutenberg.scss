@@ -1,0 +1,34 @@
+@import "node_modules/sass-mq/mq";
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+.wp-block-gallery {
+	margin-bottom: $space;
+}
+
+.wp-block-pullquote {
+	border-left: none;
+}
+
+.wp-block-button {
+	.wp-block-button__link {
+		@include font-size(11px, 1);
+		@include transition;
+		background: $color__background-button;
+		border-radius: 0;
+		border: none;
+		color: $color__text-button !important;
+		display: inline-block;
+		font-family: $font__secondary;
+		font-weight: 400;
+		letter-spacing: 2.7px;
+		padding: 13px 25px;
+		text-align: center;
+		text-decoration: none !important;
+		text-transform: uppercase;
+
+		&:hover {
+			background: $color__background-button-hover;
+		}
+	}
+}

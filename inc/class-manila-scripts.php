@@ -45,6 +45,11 @@ class Manila_Scripts {
 		if ( $google_fonts_url ) {
 			wp_enqueue_style( 'manila-google-fonts', manila_google_fonts_url(), array(), null );
 		}
+
+		// Gutenberg specific scripts and styles
+		if ( manila_is_gutenberg_active() ) {
+			wp_enqueue_style( 'manila-gutenberg', get_template_directory_uri() . '/assets/css/gutenberg.css', array(), MANILA_THEME_VERSION );
+		}
 	}
 
 	/**

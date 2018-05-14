@@ -1,0 +1,35 @@
+.wp-block-gallery {
+  margin-bottom: 28px;
+}
+
+.wp-block-pullquote {
+  border-left: none;
+}
+
+.wp-block-button .wp-block-button__link {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 1;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: color, background-color, border-color, opacity;
+  transition-property: color, background-color, border-color, opacity;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: #0F0F0F;
+  border-radius: 0;
+  border: none;
+  color: #fff !important;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  padding: 13px 25px;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.wp-block-button .wp-block-button__link:hover {
+  background: #686767;
+}
