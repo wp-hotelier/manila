@@ -134,3 +134,10 @@ function manila_rooms_archive_per_page() {
 	return $columns;
 }
 add_filter( 'loop_room_per_page', 'manila_rooms_archive_per_page' );
+
+/**
+ * Hide room description from the room shortcodes/archive.
+ */
+if ( manila_get_option( 'room-archive-loop-description', false ) ) {
+	remove_action( 'hotelier_archive_item_room', 'hotelier_template_archive_room_description', 20 );
+}

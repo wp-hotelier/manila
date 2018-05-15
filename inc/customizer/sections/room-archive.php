@@ -106,3 +106,24 @@ $wp_customize->add_control(
 		'priority'	  => 4,
 	)
 );
+
+// *************************************************************** //
+
+$wp_customize->add_setting(
+	MANILA_THEME_SETTINGS . '[room-archive-loop-description]',
+	array(
+		'default'           => false,
+		'sanitize_callback' => array( 'Manila_Customizer_Sanitizes', 'sanitize_checkbox' ),
+	)
+);
+
+$wp_customize->add_control(
+	'room-archive-loop-description',
+	array(
+		'label'       => esc_html__( 'Hide room description from loops', 'manila' ),
+		'section'     => 'manila-section-room-archive',
+		'settings'    => MANILA_THEME_SETTINGS . '[room-archive-loop-description]',
+		'type'        => 'checkbox',
+		'priority'	  => 5,
+	)
+);
