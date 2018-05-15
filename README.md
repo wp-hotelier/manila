@@ -103,4 +103,4 @@ npm run deploy
 
 This repository is not suitable for support or customizations. But to report bugs only.
 
-Questions like "How can I change the position of the element X?" or "How can I change the color to the element Y?" **will be closed immediately**. This is a free *starter* theme developed to offer a free solution for the Easy WP Hotelier. For questions related to Easy WP Hotelier use the [support forum on wp.org](https://wordpress.org/support/plugin/wp-hotelier).
+Questions like "*How can I change the position of the element X?*" or "*How can I change the color to the element Y?*" **will be closed immediately**. This is a free *starter* theme developed to offer a free solution for Easy WP Hotelier. For questions related to Easy WP Hotelier use the [support forum on wp.org](https://wordpress.org/support/plugin/wp-hotelier).
