@@ -64,6 +64,7 @@ class Manila_Customizer {
 		require MANILA_THEME_DIR . 'inc/customizer/sections/layout.php';
 		require MANILA_THEME_DIR . 'inc/customizer/sections/footer.php';
 		require MANILA_THEME_DIR . 'inc/customizer/sections/typography.php';
+		require MANILA_THEME_DIR . 'inc/customizer/sections/room-archive.php';
 	}
 }
 
