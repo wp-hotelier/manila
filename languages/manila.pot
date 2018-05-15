@@ -342,6 +342,10 @@ msgstr ""
 msgid "Number of rooms per page"
 msgstr ""
 
+#: ../inc/customizer/sections/room-archive.php:123
+msgid "Hide room description from loops"
+msgstr ""
+
 #: ../inc/customizer/sections/slider.php:17
 msgid "Home Slider"
 msgstr ""
