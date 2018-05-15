@@ -23,10 +23,12 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Perhaps searching can help."
 msgstr ""
 
+#. translators: 1: title.
 #: ../comments.php:35
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr ""
 
+#. translators: 1: comment count number, 2: title.
 #: ../comments.php:41
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
@@ -86,23 +88,27 @@ msgstr ""
 msgid "This sidebar is visible only in the room archive pages. Add widgets here."
 msgstr ""
 
+#. translators: %s: column number.
 #: ../inc/class-manila-register-widgets.php:81
 msgid "Footer %s"
 msgstr ""
 
+#. translators: %s: column number.
 #: ../inc/class-manila-register-widgets.php:84
 msgid "This is a footer column (No. %s). Add widgets here."
 msgstr ""
 
-#: ../inc/class-manila-setup-theme.php:77, ../inc/customizer/sections/navigation.php:17
+#: ../inc/class-manila-setup-theme.php:87, ../inc/customizer/sections/navigation.php:17
 msgid "Navigation"
 msgstr ""
 
+#. translators: %s: post date.
 #: ../inc/template-tags.php:33
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
+#. translators: %s: post author.
 #: ../inc/template-tags.php:49
 msgctxt "post author"
 msgid "by %s"
@@ -113,23 +119,29 @@ msgstr ""
 msgid ", "
 msgstr ""
 
+#. translators: 1: list of categories.
 #: ../inc/template-tags.php:69
 msgid "Posted in %1$s"
 msgstr ""
 
+#. translators: used between list items, there is a space after the comma
 #: ../inc/template-tags.php:73
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
+#. translators: 1: list of tags.
 #: ../inc/template-tags.php:76
 msgid "Tagged %1$s"
 msgstr ""
 
+#. translators: %s: post title
 #: ../inc/template-tags.php:86
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
 #: ../inc/template-tags.php:103, ../template-parts/content/content-page.php:105
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
@@ -142,8 +154,12 @@ msgstr ""
 msgid "Posts pagination"
 msgstr ""
 
-#: ../inc/core/hotelier-functions.php:78
+#: ../inc/compatibility/hotelier/hotelier.php:78
 msgid "Room additional details"
+msgstr ""
+
+#: ../inc/compatibility/hotelier/hotelier.php:95, ../inc/customizer/sections/room-archive.php:27
+msgid "Rooms Archive"
 msgstr ""
 
 #: ../inc/customizer/sections/footer.php:17
@@ -158,15 +174,15 @@ msgstr ""
 msgid "Select the number of columns"
 msgstr ""
 
-#: ../inc/customizer/sections/footer.php:42
+#: ../inc/customizer/sections/footer.php:42, ../inc/customizer/sections/room-archive.php:82
 msgid "2 columns"
 msgstr ""
 
-#: ../inc/customizer/sections/footer.php:43
+#: ../inc/customizer/sections/footer.php:43, ../inc/customizer/sections/room-archive.php:83
 msgid "3 columns"
 msgstr ""
 
-#: ../inc/customizer/sections/footer.php:44
+#: ../inc/customizer/sections/footer.php:44, ../inc/customizer/sections/room-archive.php:84
 msgid "4 columns"
 msgstr ""
 
@@ -306,6 +322,26 @@ msgstr ""
 msgid "Show logo on off-canvas navigation"
 msgstr ""
 
+#: ../inc/customizer/sections/room-archive.php:17
+msgid "Room Archive"
+msgstr ""
+
+#: ../inc/customizer/sections/room-archive.php:35
+msgid "Page title"
+msgstr ""
+
+#: ../inc/customizer/sections/room-archive.php:55
+msgid "Page description (leave empty to disable)"
+msgstr ""
+
+#: ../inc/customizer/sections/room-archive.php:76
+msgid "Number of columns"
+msgstr ""
+
+#: ../inc/customizer/sections/room-archive.php:102
+msgid "Number of rooms per page"
+msgstr ""
+
 #: ../inc/customizer/sections/slider.php:17
 msgid "Home Slider"
 msgstr ""
@@ -386,6 +422,7 @@ msgstr ""
 msgid "Choose Images"
 msgstr ""
 
+#. translators: %s: search query.
 #: ../search.php:35
 msgid "Search Results for: %s"
 msgstr ""
@@ -414,6 +451,7 @@ msgstr ""
 msgid "Nothing Found"
 msgstr ""
 
+#. translators: 1: link to WP admin new post page.
 #: ../template-parts/content/content-none.php:31
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
@@ -430,6 +468,7 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
+#. translators: %s: Name of current post. Only visible to screen readers
 #: ../template-parts/content/content.php:78
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
@@ -438,6 +477,9 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
+#. translators: 1: menu editor link.
+#. translators: 1: menu editor link.
+#. translators: 1: menu editor link.
 #: ../template-parts/header/header-default-menu.php:76, ../template-parts/header/header-off-canvas-menu.php:38, ../template-parts/header/header-top-menu.php:39
 msgid "Please <a href=\"%1$s\">create a menu</a> and assign it to the \"Navigation\" location."
 msgstr ""
