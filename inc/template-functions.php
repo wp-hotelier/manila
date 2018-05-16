@@ -28,11 +28,6 @@ function manila_body_classes( $classes ) {
 		$classes[] = 'off-canvas-show-logo';
 	}
 
-	// Adds a custom class when the sticky header is enabled
-	if ( manila_get_option( 'navigation-sticky-header', true ) ) {
-		$classes[] = 'sticky-header-enabled';
-	}
-
 	return $classes;
 }
 add_filter( 'body_class', 'manila_body_classes' );
