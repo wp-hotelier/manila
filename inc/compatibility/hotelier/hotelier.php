@@ -99,6 +99,12 @@ if ( ! function_exists( 'manila_rooms_archive_title' ) ) :
 endif;
 add_filter( 'hotelier_rooms_archive_page_title', 'manila_rooms_archive_title' );
 
+/**
+ * Change rooms archive description position.
+ */
+remove_action( 'hotelier_archive_description', 'hotelier_taxonomy_archive_description', 10 );
+add_action( 'hotelier_after_page_title', 'hotelier_taxonomy_archive_description', 10 );
+
 if ( ! function_exists( 'manila_rooms_archive_desription' ) ) :
 	/**
 	 * Show rooms archive description.
@@ -113,7 +119,9 @@ if ( ! function_exists( 'manila_rooms_archive_desription' ) ) :
 		}
 	}
 endif;
-add_action( 'hotelier_archive_description', 'manila_rooms_archive_desription', 10 );
+add_action( 'hotelier_after_page_title', 'manila_rooms_archive_desription', 10 );
+
+// hotelier_after_page_title
 
 /**
  * Number of columns (rooms archive).
