@@ -119,8 +119,8 @@
 }
 
 .room__name--loop {
-	@include font-size(20px);
-	margin-bottom: $space__s;
+	@include font-size(18px);
+	margin-bottom: 0;
 }
 
 .room__link--loop:hover {
@@ -143,7 +143,7 @@
 }
 
 .room__description--loop {
-	@include font-size(15px);
+	@include font-size(14px);
 	margin-top: $space__xs;
 
 	p {
@@ -151,7 +151,12 @@
 	}
 }
 
+.room__name--loop + .room__description--loop {
+	margin-top: $space__s;
+}
+
 .button--view-room-details {
+	@include font-size(10px, 1);
 	margin-top: $space__s;
 }
 

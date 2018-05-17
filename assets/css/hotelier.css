@@ -76,10 +76,10 @@
 }
 
 .room__name--loop {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.4;
-  margin-bottom: 14px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.55556;
+  margin-bottom: 0;
 }
 
 .room__link--loop:hover {
@@ -102,9 +102,9 @@
 }
 
 .room__description--loop {
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.86667;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2;
   margin-top: 7px;
 }
 
@@ -112,7 +112,14 @@
   margin-bottom: 0;
 }
 
+.room__name--loop + .room__description--loop {
+  margin-top: 14px;
+}
+
 .button--view-room-details {
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 1;
   margin-top: 14px;
 }
 
