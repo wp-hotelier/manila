@@ -574,6 +574,12 @@ table.hotelier-table .amount {
   display: block;
 }
 
+/* Room Archive */
+.post-type-archive-room .site-main--no-sidebar .page__header,
+.tax-room_cat .site-main--no-sidebar .page__header {
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 >>> ROOM PAGE
 ----------------------------------------------------------------

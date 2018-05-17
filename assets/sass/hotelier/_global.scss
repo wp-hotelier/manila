@@ -764,3 +764,12 @@ table.hotelier-table {
 		display: block;
 	}
 }
+
+/* Room Archive */
+
+.post-type-archive-room,
+.tax-room_cat {
+	.site-main--no-sidebar .page__header {
+		text-align: center;
+	}
+}
