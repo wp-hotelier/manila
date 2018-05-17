@@ -770,6 +770,9 @@ table.hotelier-table {
 .post-type-archive-room,
 .tax-room_cat {
 	.site-main--no-sidebar .page__header {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 770px;
 		text-align: center;
 	}
 }
