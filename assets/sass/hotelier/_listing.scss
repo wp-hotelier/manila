@@ -43,11 +43,14 @@
 }
 
 .room__content-wrapper {
+	margin-bottom: $space;
+
 	@include mq($from: tablet) {
 		display: flex;
 		flex-wrap: row nowrap;
 		padding-left: 100px;
 		position: relative;
+		margin-bottom: 0;
 	}
 }
 

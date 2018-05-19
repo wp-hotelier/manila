@@ -873,6 +873,10 @@ table.hotelier-table .amount {
   margin-bottom: 84px;
 }
 
+.room__content-wrapper {
+  margin-bottom: 28px;
+}
+
 .room__name--listing {
   font-size: 19px;
   font-size: 1.1875rem;
@@ -1715,6 +1719,7 @@ table.hotelier-table .amount {
         flex-wrap: row nowrap;
     padding-left: 100px;
     position: relative;
+    margin-bottom: 0;
   }
   .room__content--listing,
   .rate__content--listing {
