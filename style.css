@@ -1944,6 +1944,11 @@ animation on the container
   margin-top: 84px;
 }
 
+.comment-form-cookies-consent label {
+  display: inline;
+  margin-left: 14px;
+}
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
