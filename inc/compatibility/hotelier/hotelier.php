@@ -14,7 +14,7 @@ if ( ! manila_is_hotelier_active() ) {
 	return;
 }
 
-if ( ! function_exists( '_disable_hotelier_style' ) ) :
+if ( ! function_exists( 'manila_disable_hotelier_style' ) ) :
 
 	/**
 	 * Disable default Hotelier CSS style
