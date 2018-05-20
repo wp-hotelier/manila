@@ -1308,6 +1308,15 @@ table.hotelier-table .amount {
   margin-top: 56px;
 }
 
+.form-row--booking-terms {
+  margin-bottom: 56px;
+}
+
+.form-row--booking-terms .label--booking-terms {
+  display: inline;
+  margin-left: 14px;
+}
+
 /*--------------------------------------------------------------
 >>> WIDGETS
 ----------------------------------------------------------------

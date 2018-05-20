@@ -270,3 +270,12 @@
 		margin-top: $space__l;
 	}
 }
+
+.form-row--booking-terms {
+	margin-bottom: $space__l;
+
+	.label--booking-terms {
+		display: inline;
+		margin-left: $space__s;
+	}
+}
