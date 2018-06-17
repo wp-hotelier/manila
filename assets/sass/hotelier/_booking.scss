@@ -279,3 +279,10 @@
 		margin-left: $space__s;
 	}
 }
+
+.reservation-table__room-remove {
+	margin: $space__xs 0 0;
+	@include font-size(10px);
+	padding: 5px 17px;
+}
+

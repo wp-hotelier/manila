@@ -1317,6 +1317,14 @@ table.hotelier-table .amount {
   margin-left: 14px;
 }
 
+.reservation-table__room-remove {
+  margin: 7px 0 0;
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 2.8;
+  padding: 5px 17px;
+}
+
 /*--------------------------------------------------------------
 >>> WIDGETS
 ----------------------------------------------------------------
