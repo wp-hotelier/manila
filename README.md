@@ -6,7 +6,7 @@ Welcome to the [Manila](http://manila.wphotelier.com/) GitHub repository. Manila
 
 ## Installation ##
 
-1. Clone this repository or download the last release directly as a ZIP file [here](https://github.com/easy-wp-hotelier/manila/releases).
+1. Clone this repository or download the last release directly as a ZIP file [here](https://github.com/wp-hotelier/manila/releases).
 2. Like any other WordPress theme, place it in `/wp-content/themes/` (the extracted `manila` folder). Or upload the **manila.zip** file navigating to `Appearance > Themes > Add New`.
 
 ## NPM usage
