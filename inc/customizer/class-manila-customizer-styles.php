@@ -4,7 +4,7 @@
  *
  * @package   Manila
  * @author    Easy WP Hotelier
- * @copyright Copyright (c) 2018, Easy WP Hotelier
+ * @copyright Copyright (c) 2019, Easy WP Hotelier
  * @version   1.0.0
  */
 
