@@ -10,6 +10,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Easy WP Hotelier functions.
+ * WP Hotelier functions.
  */
 require MANILA_THEME_DIR . 'inc/compatibility/hotelier/hotelier.php';

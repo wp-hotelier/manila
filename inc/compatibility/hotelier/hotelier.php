@@ -1,6 +1,6 @@
 <?php
 /**
- * Easy WP Hotelier related functions.
+ * WP Hotelier related functions.
  *
  * @package Manila
  */
@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-// Return early if Easy WP Hotelier is not active
+// Return early if WP Hotelier is not active
 if ( ! manila_is_hotelier_active() ) {
 	return;
 }

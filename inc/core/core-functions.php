@@ -25,7 +25,7 @@ endif;
 
 if ( ! function_exists( 'manila_is_hotelier_active' ) ) :
 /**
- * Check if Easy WP Hotelier is active
+ * Check if WP Hotelier is active
  */
 function manila_is_hotelier_active() {
 	if ( class_exists( 'Hotelier' ) ) {

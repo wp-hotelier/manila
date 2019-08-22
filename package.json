@@ -1,8 +1,8 @@
 {
   "name": "manila",
   "version": "1.0.1",
-  "description": "Free blank content WordPress theme for Easy WP hotelier",
-  "author": "Easy WP Hotelier https://wphotelier.com/",
+  "description": "Free blank content WordPress theme for WP Hotelier",
+  "author": "WP Hotelier https://wphotelier.com/",
   "private": true,
   "license": "GPL-3.0",
   "scripts": {

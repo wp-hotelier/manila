@@ -249,7 +249,7 @@ if ( ! function_exists( 'manila_header_book_button' ) ) :
  * Prints the book button in the header.
  */
 function manila_header_book_button() {
-	// Return early if Easy WP Hotelier is not active
+	// Return early if WP Hotelier is not active
 	if ( ! manila_is_hotelier_active() ) {
 		return;
 	}

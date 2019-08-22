@@ -3,8 +3,8 @@
  * Manila Scripts
  *
  * @package   Manila
- * @author    Easy WP Hotelier
- * @copyright Copyright (c) 2019, Easy WP Hotelier
+ * @author    WP Hotelier
+ * @copyright Copyright (c) 2019, WP Hotelier
  * @version   1.0.0
  */
 
