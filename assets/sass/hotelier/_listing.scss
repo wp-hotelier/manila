@@ -196,3 +196,29 @@
 		padding: 25px 60px;
 	}
 }
+
+.room__fees {
+	margin-bottom: $space;
+}
+
+.room__rate .room__fees {
+	margin-bottom: 0;
+}
+
+.room-fee + .room-fee {
+	margin-top: $space__xs;
+}
+
+.room-fee__label {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	letter-spacing: inherit;
+	line-height: inherit;
+	text-transform: none;
+
+	input {
+		margin-right: $space__xs;
+	}
+}

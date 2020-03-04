@@ -1022,6 +1022,32 @@ table.hotelier-table .amount {
   padding: 25px 60px;
 }
 
+.room__fees {
+  margin-bottom: 28px;
+}
+
+.room__rate .room__fees {
+  margin-bottom: 0;
+}
+
+.room-fee + .room-fee {
+  margin-top: 7px;
+}
+
+.room-fee__label {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-transform: none;
+}
+
+.room-fee__label input {
+  margin-right: 7px;
+}
+
 /*--------------------------------------------------------------
 >>> BOOKING
 ----------------------------------------------------------------
