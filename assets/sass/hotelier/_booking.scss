@@ -292,3 +292,7 @@
 	padding: 5px 17px;
 }
 
+.reservation-table__extra-guests-fee {
+	@include font-size(14px);
+	display: block;
+}

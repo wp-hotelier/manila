@@ -1329,6 +1329,13 @@ table.hotelier-table .amount {
   padding: 5px 17px;
 }
 
+.reservation-table__extra-guests-fee {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2;
+  display: block;
+}
+
 /*--------------------------------------------------------------
 >>> WIDGETS
 ----------------------------------------------------------------
