@@ -28,6 +28,12 @@
 	}
 }
 
+#country_field {
+	select {
+		width: 100%;
+	}
+}
+
 #arrival_time_field {
 	label {
 		@include font-size(16px);

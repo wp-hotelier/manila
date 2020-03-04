@@ -1072,6 +1072,10 @@ table.hotelier-table .amount {
   overflow: hidden;
 }
 
+#country_field select {
+  width: 100%;
+}
+
 #arrival_time_field label {
   font-size: 16px;
   font-size: 1rem;
