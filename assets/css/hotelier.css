@@ -505,6 +505,10 @@
   width: 100%;
 }
 
+.form-row--wide select {
+  width: 100%;
+}
+
 /* Reservation tables */
 table.hotelier-table {
   font-size: 16px;

@@ -684,6 +684,12 @@
 	textarea {
 		width: 100%;
 	}
+
+	&--wide {
+		select {
+			width: 100%;
+		}
+	}
 }
 
 @include mq($from: tablet) {
