@@ -204,6 +204,12 @@
 		right: $space;
 		transform: translateY(-50%);
 	}
+
+	&--stripe {
+		img {
+			top: 20%;
+		}
+	}
 }
 
 .payment-method__label {

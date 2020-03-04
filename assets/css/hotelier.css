@@ -1239,6 +1239,10 @@ table.hotelier-table .amount {
           transform: translateY(-50%);
 }
 
+.payment-method--stripe img {
+  top: 20%;
+}
+
 .payment-method__label {
   cursor: pointer;
   display: inline;
