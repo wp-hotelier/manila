@@ -302,3 +302,73 @@
 	@include font-size(14px);
 	display: block;
 }
+
+.coupon-form-input-wrapper {
+	@include mq($from: mobile_wide) {
+		display: flex;
+	}
+}
+
+.coupon-form__input {
+	margin-bottom: $space__xs;
+	width: 100%;
+
+	@include mq($from: mobile_wide) {
+		flex-grow: 1;
+		margin-bottom: 0;
+		width: auto;
+		margin-right: $space__xs;
+	}
+}
+
+.coupon-form {
+	.hotelier-notice {
+		margin-bottom: 0;
+		margin-top: $space__xs;
+		padding-bottom: $space__xs;
+		padding-top: $space__xs;
+	}
+}
+
+.coupon-card {
+	background-color: #fafafa;
+	padding: $space__xs;
+	margin-top: $space__xs;
+
+	@include mq($from: mobile_wide) {
+		display: flex;
+	}
+}
+
+.coupon-card__info {
+	@include mq($from: mobile_wide) {
+		flex-grow: 1;
+	}
+}
+
+.coupon-card__title {
+	@include font-size(11px);
+	color: $color__text-dark;
+	display: block;
+	font-family: $font__secondary;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+
+}
+
+.coupon-card__description {
+	font-style: italic;
+}
+
+.coupon-card__total strong {
+	display: block;
+
+
+	@include mq($from: mobile_wide) {
+		// display: inline;
+		text-align: right;
+	}
+}
+
+

@@ -1366,6 +1366,44 @@ table.hotelier-table .amount {
   display: block;
 }
 
+.coupon-form__input {
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.coupon-form .hotelier-notice {
+  margin-bottom: 0;
+  margin-top: 7px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.coupon-card {
+  background-color: #fafafa;
+  padding: 7px;
+  margin-top: 7px;
+}
+
+.coupon-card__title {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 2.54545;
+  color: #0F0F0F;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.coupon-card__description {
+  font-style: italic;
+}
+
+.coupon-card__total strong {
+  display: block;
+}
+
 /*--------------------------------------------------------------
 >>> WIDGETS
 ----------------------------------------------------------------
@@ -1676,6 +1714,32 @@ table.hotelier-table .amount {
     font-size: 9px;
     font-size: 0.5625rem;
     line-height: 3.11111;
+  }
+  .coupon-form-input-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .coupon-form__input {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 0;
+    width: auto;
+    margin-right: 7px;
+  }
+  .coupon-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .coupon-card__info {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .coupon-card__total strong {
+    text-align: right;
   }
 }
 
