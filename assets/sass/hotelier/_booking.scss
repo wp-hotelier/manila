@@ -371,4 +371,9 @@
 	}
 }
 
-
+.reservation-table__room-extra {
+	.extra__description {
+		@include font-size(14px);
+		display: block;
+	}
+}

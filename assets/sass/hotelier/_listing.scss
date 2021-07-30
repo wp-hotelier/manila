@@ -47,7 +47,7 @@
 
 	@include mq($from: tablet) {
 		display: flex;
-		flex-wrap: row nowrap;
+		flex-wrap: wrap;
 		padding-left: 100px;
 		position: relative;
 		margin-bottom: 0;
@@ -221,4 +221,46 @@
 	input {
 		margin-right: $space__xs;
 	}
+}
+
+.room-extras__title {
+	@include font-size(18px);
+}
+
+.room-extra {
+	margin-bottom: 27px;
+}
+
+.rate__extras .room-extra {
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.room-extra__title {
+	@include font-size(16px);
+	border-top: 1px solid $color__background-line;;
+	margin-bottom: 18px;
+	margin-top: 27px;
+	padding-top: 27px;
+}
+
+.room-extra__info {
+	@include font-size(13px);
+	display: block;
+	margin-bottom: 9px;
+}
+
+.room-extra__description {
+	margin-bottom: 9px;
+}
+
+.room-extra__price {
+	@include font-size(14px);
+	color: $color__text-dark;
+	font-weight: 700;
+}
+
+.rate__extras.room-extras {
+	width: 100%;
 }

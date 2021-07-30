@@ -1048,6 +1048,54 @@ table.hotelier-table .amount {
   margin-right: 7px;
 }
 
+.room-extras__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.55556;
+}
+
+.room-extra {
+  margin-bottom: 27px;
+}
+
+.rate__extras .room-extra:last-child {
+  margin-bottom: 0;
+}
+
+.room-extra__title {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+  border-top: 1px solid #ddd;
+  margin-bottom: 18px;
+  margin-top: 27px;
+  padding-top: 27px;
+}
+
+.room-extra__info {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 2.15385;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.room-extra__description {
+  margin-bottom: 9px;
+}
+
+.room-extra__price {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2;
+  color: #0F0F0F;
+  font-weight: 700;
+}
+
+.rate__extras.room-extras {
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 >>> BOOKING
 ----------------------------------------------------------------
@@ -1401,6 +1449,13 @@ table.hotelier-table .amount {
 }
 
 .coupon-card__total strong {
+  display: block;
+}
+
+.reservation-table__room-extra .extra__description {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2;
   display: block;
 }
 
@@ -1807,8 +1862,8 @@ table.hotelier-table .amount {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: row nowrap;
-        flex-wrap: row nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .rate__description-wrapper {
     border-right: 1px solid #ddd;
@@ -1837,8 +1892,8 @@ table.hotelier-table .amount {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: row nowrap;
-        flex-wrap: row nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-left: 100px;
     position: relative;
     margin-bottom: 0;

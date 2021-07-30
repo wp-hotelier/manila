@@ -627,7 +627,7 @@
 .room__rate {
 	@include mq($from: tablet) {
 		display: flex;
-		flex-wrap: row nowrap;
+		flex-wrap: wrap;
 	}
 }
 
