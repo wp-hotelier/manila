@@ -110,7 +110,8 @@
 	margin-top: $space__xs;
 }
 
-.room__more-link {
+.room__more-link,
+.button--extras-toggle {
 	@include font-size(10px);
 	display: block;
 	font-family: $font__secondary;
@@ -264,3 +265,11 @@
 .rate__extras.room-extras {
 	width: 100%;
 }
+
+.button--extras-toggle {
+	color: $color__text-dark;
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 9px;
+}
+

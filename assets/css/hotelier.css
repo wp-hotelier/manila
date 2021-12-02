@@ -923,7 +923,8 @@ table.hotelier-table .amount {
   margin-top: 7px;
 }
 
-.room__more-link {
+.room__more-link,
+.button--extras-toggle {
   font-size: 10px;
   font-size: 0.625rem;
   line-height: 2.8;
@@ -1094,6 +1095,13 @@ table.hotelier-table .amount {
 
 .rate__extras.room-extras {
   width: 100%;
+}
+
+.button--extras-toggle {
+  color: #0F0F0F;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 /*--------------------------------------------------------------
