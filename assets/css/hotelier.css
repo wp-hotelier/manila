@@ -706,6 +706,10 @@ table.hotelier-table .amount {
   padding-top: 56px;
 }
 
+.has-not-room-gallery.has-not-room-datepicker.has-not-room-price .room__meta--single {
+  margin-top: 0;
+}
+
 .room__details h3 {
   font-size: 12px;
   font-size: 0.75rem;

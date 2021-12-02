@@ -121,6 +121,12 @@
 	padding-top: $space__l;
 }
 
+.has-not-room-gallery.has-not-room-datepicker.has-not-room-price {
+	.room__meta--single {
+		margin-top: 0;
+	}
+}
+
 .room__details {
 	h3 {
 		@include font-size(12px);
@@ -226,3 +232,4 @@
 	margin-bottom: $space__m;
 	text-transform: uppercase;
 }
+
