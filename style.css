@@ -2593,7 +2593,6 @@ html[xmlns] .flexslider .slides {
   }
   .site-sidebar--right-sidebar,
   .site-sidebar--left-sidebar {
-    overflow: hidden;
     width: 30%;
   }
   .site-sidebar--right-sidebar {
