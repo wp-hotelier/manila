@@ -263,3 +263,76 @@
 .widget-rooms-filter__group-item--chosen .widget-rooms-filter__group-link {
 	color: $color__text-dark;
 }
+
+/* AJAX Room Booking widget */
+
+.widget-ajax-room-booking {
+	.datepicker-input-select {
+		background-position: calc(100% - 25px) 60%;
+	}
+
+	.form-row {
+		margin-top: 18px;
+	}
+
+	.widget-ajax-room-booking__data--price {
+		@include font-size(14px);
+		display: block;
+
+		.amount {
+			color: $color__text-dark;
+			font-size: 160%;
+			font-weight: 700;
+		}
+
+		del {
+			color: inherit;
+			font-size: 75%;
+			opacity: 0.5;
+
+			.amount {
+			}
+		}
+
+		ins {
+			background: none;
+		}
+	}
+
+	.room-fee + .room-fee {
+		margin-top: 18px;
+	}
+
+	.reset--widget-ajax-room-booking {
+		@include font-size(14px);
+		display: block;
+		margin-top: 18px;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	.button--widget-ajax-room-booking {
+		width: 100%;
+	}
+
+	.room-extras__title {
+		margin-bottom: 18px;
+	}
+
+	.room-extra {
+		margin-bottom: 18px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.room-extra__title {
+		margin-top: 18px;
+		padding-top: 18px;
+	}
+
+	.hotelier-notice {
+		margin-top: 18px;
+	}
+}

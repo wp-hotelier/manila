@@ -1717,6 +1717,77 @@ table.hotelier-table .amount {
   color: #0F0F0F;
 }
 
+/* AJAX Room Booking widget */
+.widget-ajax-room-booking .datepicker-input-select {
+  background-position: calc(100% - 25px) 60%;
+}
+
+.widget-ajax-room-booking .form-row {
+  margin-top: 18px;
+}
+
+.widget-ajax-room-booking .widget-ajax-room-booking__data--price {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2;
+  display: block;
+}
+
+.widget-ajax-room-booking .widget-ajax-room-booking__data--price .amount {
+  color: #0F0F0F;
+  font-size: 160%;
+  font-weight: 700;
+}
+
+.widget-ajax-room-booking .widget-ajax-room-booking__data--price del {
+  color: inherit;
+  font-size: 75%;
+  opacity: 0.5;
+}
+
+.widget-ajax-room-booking .widget-ajax-room-booking__data--price ins {
+  background: none;
+}
+
+.widget-ajax-room-booking .room-fee + .room-fee {
+  margin-top: 18px;
+}
+
+.widget-ajax-room-booking .reset--widget-ajax-room-booking {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2;
+  display: block;
+  margin-top: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.widget-ajax-room-booking .button--widget-ajax-room-booking {
+  width: 100%;
+}
+
+.widget-ajax-room-booking .room-extras__title {
+  margin-bottom: 18px;
+}
+
+.widget-ajax-room-booking .room-extra {
+  margin-bottom: 18px;
+}
+
+.widget-ajax-room-booking .room-extra:last-child {
+  margin-bottom: 0;
+}
+
+.widget-ajax-room-booking .room-extra__title {
+  margin-top: 18px;
+  padding-top: 18px;
+}
+
+.widget-ajax-room-booking .hotelier-notice {
+  margin-top: 18px;
+}
+
 @media (min-width: 20em) {
   .datepicker {
     width: 300px;
