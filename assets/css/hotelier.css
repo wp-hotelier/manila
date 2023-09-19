@@ -869,16 +869,21 @@ table.hotelier-table .amount {
 }
 
 .listing__room.room--selected {
-  border-color: #9DC94A;
+  border-color: #9dc94a;
 }
 
 .listing__room--queried {
-  border-color: #9DC94A;
+  border-color: #9dc94a;
   margin-bottom: 84px;
 }
 
 .room__content-wrapper {
   margin-bottom: 28px;
+}
+
+.listing__room--rates-expanded.listing__room--variable .room__content--listing {
+  padding-right: 0;
+  width: 100%;
 }
 
 .room__name--listing {

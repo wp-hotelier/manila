@@ -30,15 +30,15 @@
 	padding: $space $space 0;
 	transition-duration: 0.2s;
 	transition-property: border-color;
-	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 	&.room--selected {
-		border-color: #9DC94A;
+		border-color: #9dc94a;
 	}
 }
 
 .listing__room--queried {
-	border-color: #9DC94A;
+	border-color: #9dc94a;
 	margin-bottom: $space__ll;
 }
 
@@ -59,6 +59,13 @@
 	@include mq($from: tablet) {
 		padding-right: 4%;
 		width: 60%;
+	}
+}
+
+.listing__room--rates-expanded.listing__room--variable {
+	.room__content--listing {
+		padding-right: 0;
+		width: 100%;
 	}
 }
 
@@ -240,7 +247,7 @@
 
 .room-extra__title {
 	@include font-size(16px);
-	border-top: 1px solid $color__background-line;;
+	border-top: 1px solid $color__background-line;
 	margin-bottom: 18px;
 	margin-top: 27px;
 	padding-top: 27px;
@@ -272,4 +279,3 @@
 	display: inline-block;
 	margin-bottom: 9px;
 }
-
