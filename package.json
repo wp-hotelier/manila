@@ -1,63 +1,63 @@
 {
-  "name": "manila",
-  "version": "1.2.0",
-  "description": "Free blank content WordPress theme for WP Hotelier",
-  "author": "WP Hotelier https://wphotelier.com/",
-  "private": true,
-  "license": "GPL-3.0",
-  "scripts": {
-    "test": "xo",
-    "run:sass": "node-sass -o .tmp assets/sass --output-style expanded",
-    "run:pot": "wp-pot --src '**/*.php' --dest-file \"languages/${npm_config_P_SLUG}.pot\" --domain \"${npm_config_P_SLUG}\" --package \"${npm_config_P_NICENAME}\" --bug-report \"${npm_config_P_POT_BUG_REPORT}\" --team \"${npm_config_P_POT_TEAM}\" --write-file",
-    "run:sync": "rsync -azP -e \"ssh -p ${npm_config_P_SSHPORT}\" --delete --exclude='assets/sass/' --exclude='.*/' --exclude='.*' --exclude='postcss.config.js' --exclude='npm-debug.log*' --exclude='package*' --exclude='README.md' --exclude='node_modules/' --exclude='dist/' . \"${npm_config_P_SYNCDEST}\"",
-    "run:xo": "xo --no-esnext --fix || true",
-    "run:js": "npm-run-all --silent --parallel run:xo",
-    "build:pot": "onchange '**/*.php' -i -w -- npm run run:pot",
-    "build:js": "onchange 'assets/js/*.js' -e 'assets/js/*.min.js' -e 'assets/js/vendor' -i -w -- npm run run:js",
-    "build:scss": "npm run run:sass && npm run run:sass -- -w",
-    "build:css-default": "postcss --no-map -w .tmp/style.css -d .",
-    "build:css-hotelier": "postcss --no-map -w .tmp/hotelier.css -d assets/css",
-    "build:css-gutenberg": "postcss --no-map -w .tmp/gutenberg.css -d assets/css",
-    "sync": "onchange '**/*' -e 'dist' -e '.git' -e 'sass' -e 'languages' -e 'assets/js/*.min.js' -e '.tmp' -w -- npm run run:sync",
-    "server": "browser-sync start --proxy $npm_config_P_URL --host $npm_config_P_URL --reload-delay 1000 --files '**/*.css'",
-    "dirs": "mkdir -p .tmp; touch .tmp/style.css; touch .tmp/hotelier.css; mkdir -p languages; touch \"languages/${npm_config_P_SLUG}.pot\";",
-    "zip": "rsync -azP -e --delete --exclude='package*' --exclude='README.md' --exclude='postcss.config.js' --exclude='npm-debug.log*' --exclude='.*/' --exclude='.*' --exclude='node_modules/' --exclude='dist/' --exclude='assets/sass/' . dist/$npm_config_P_SLUG; cd dist; zip -r $npm_config_P_SLUG.$npm_package_version.zip $npm_config_P_SLUG; cd ..",
-    "build": "npm run dirs -s; npm-run-all --silent --parallel build:*",
-    "build-sync": "npm run dirs -s; npm-run-all --silent --parallel build:* sync",
-    "build-server": "npm run dirs -s; npm-run-all --silent --parallel build:* server",
-    "build-sync-server": "npm run dirs -s; npm-run-all --silent --parallel build:* sync server",
-    "dist": "rm -rf dist; mkdir -p dist/$npm_config_P_SLUG; npm run zip -s",
-    "deploy": "rsync -azP -e \"ssh -p ${npm_config_P_DEPLOYPORT}\" --delete --exclude='package*' --exclude='README.md' --exclude='postcss.config.js' --exclude='npm-debug.log*' --exclude='.*/' --exclude='.*' --exclude='node_modules/' --exclude='dist/' --exclude='assets/sass/' . \"${npm_config_P_DEPLOYDEST}\""
-  },
-  "devDependencies": {
-    "autoprefixer": "^8.2.0",
-    "browser-sync": "^2.23.6",
-    "css-mqpacker": "^6.0.2",
-    "node-sass": "^4.8.3",
-    "npm-run-all": "^4.1.2",
-    "onchange": "^4.0.0",
-    "postcss-cli": "^5.0.0",
-    "sass-mq": "^4.0.2",
-    "wp-pot-cli": "^1.1.0",
-    "xo": "^0.21.0"
-  },
-  "xo": {
-    "esnext": false,
-    "ignores": [
-      "assets/js/vendor/**",
-      "inc/customizer/custom-controls/**"
-    ],
-    "env": [
-      "browser"
-    ],
-    "rules": {
-      "camelcase": 0,
-      "no-negated-condition": 0,
-      "array-callback-return": 0,
-      "no-useless-escape": 0
-    }
-  },
-  "dependencies": {
-    "npm": "^6.0.1"
-  }
+	"name": "manila",
+	"version": "1.4.0",
+	"description": "Free blank content WordPress theme for WP Hotelier",
+	"author": "WP Hotelier https://wphotelier.com/",
+	"private": true,
+	"license": "GPL-3.0",
+	"scripts": {
+		"test": "xo",
+		"run:sass": "node-sass -o .tmp assets/sass --output-style expanded",
+		"run:pot": "wp-pot --src '**/*.php' --dest-file \"languages/${npm_config_P_SLUG}.pot\" --domain \"${npm_config_P_SLUG}\" --package \"${npm_config_P_NICENAME}\" --bug-report \"${npm_config_P_POT_BUG_REPORT}\" --team \"${npm_config_P_POT_TEAM}\" --write-file",
+		"run:sync": "rsync -azP -e \"ssh -p ${npm_config_P_SSHPORT}\" --delete --exclude='assets/sass/' --exclude='.*/' --exclude='.*' --exclude='postcss.config.js' --exclude='npm-debug.log*' --exclude='package*' --exclude='README.md' --exclude='node_modules/' --exclude='dist/' . \"${npm_config_P_SYNCDEST}\"",
+		"run:xo": "xo --no-esnext --fix || true",
+		"run:js": "npm-run-all --silent --parallel run:xo",
+		"build:pot": "onchange '**/*.php' -i -w -- npm run run:pot",
+		"build:js": "onchange 'assets/js/*.js' -e 'assets/js/*.min.js' -e 'assets/js/vendor' -i -w -- npm run run:js",
+		"build:scss": "npm run run:sass && npm run run:sass -- -w",
+		"build:css-default": "postcss --no-map -w .tmp/style.css -d .",
+		"build:css-hotelier": "postcss --no-map -w .tmp/hotelier.css -d assets/css",
+		"build:css-gutenberg": "postcss --no-map -w .tmp/gutenberg.css -d assets/css",
+		"sync": "onchange '**/*' -e 'dist' -e '.git' -e 'sass' -e 'languages' -e 'assets/js/*.min.js' -e '.tmp' -w -- npm run run:sync",
+		"server": "browser-sync start --proxy $npm_config_P_URL --host $npm_config_P_URL --reload-delay 1000 --files '**/*.css'",
+		"dirs": "mkdir -p .tmp; touch .tmp/style.css; touch .tmp/hotelier.css; mkdir -p languages; touch \"languages/${npm_config_P_SLUG}.pot\";",
+		"zip": "rsync -azP -e --delete --exclude='package*' --exclude='README.md' --exclude='postcss.config.js' --exclude='npm-debug.log*' --exclude='.*/' --exclude='.*' --exclude='node_modules/' --exclude='dist/' --exclude='assets/sass/' . dist/$npm_config_P_SLUG; cd dist; zip -r $npm_config_P_SLUG.$npm_package_version.zip $npm_config_P_SLUG; cd ..",
+		"build": "npm run dirs -s; npm-run-all --silent --parallel build:*",
+		"build-sync": "npm run dirs -s; npm-run-all --silent --parallel build:* sync",
+		"build-server": "npm run dirs -s; npm-run-all --silent --parallel build:* server",
+		"build-sync-server": "npm run dirs -s; npm-run-all --silent --parallel build:* sync server",
+		"dist": "rm -rf dist; mkdir -p dist/$npm_config_P_SLUG; npm run zip -s",
+		"deploy": "rsync -azP -e \"ssh -p ${npm_config_P_DEPLOYPORT}\" --delete --exclude='package*' --exclude='README.md' --exclude='postcss.config.js' --exclude='npm-debug.log*' --exclude='.*/' --exclude='.*' --exclude='node_modules/' --exclude='dist/' --exclude='assets/sass/' . \"${npm_config_P_DEPLOYDEST}\""
+	},
+	"devDependencies": {
+		"autoprefixer": "^8.2.0",
+		"browser-sync": "^2.23.6",
+		"css-mqpacker": "^6.0.2",
+		"node-sass": "^4.8.3",
+		"npm-run-all": "^4.1.2",
+		"onchange": "^4.0.0",
+		"postcss-cli": "^5.0.0",
+		"sass-mq": "^4.0.2",
+		"wp-pot-cli": "^1.1.0",
+		"xo": "^0.21.0"
+	},
+	"xo": {
+		"esnext": false,
+		"ignores": [
+			"assets/js/vendor/**",
+			"inc/customizer/custom-controls/**"
+		],
+		"env": [
+			"browser"
+		],
+		"rules": {
+			"camelcase": 0,
+			"no-negated-condition": 0,
+			"array-callback-return": 0,
+			"no-useless-escape": 0
+		}
+	},
+	"dependencies": {
+		"npm": "^6.0.1"
+	}
 }
