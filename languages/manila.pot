@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Manila
+# Copyright (C) 2023 Manila
 # This file is distributed under the same license as the Manila package.
 msgid ""
 msgstr ""
